@@ -1,0 +1,60 @@
+ <html>
+
+ <head>
+   <title>Image recognition</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+
+ </head>
+
+ <body>
+   <div class="container">
+
+     <center>
+       <div class="topic">
+         <h1>IMAGE RECOGNITION</h1>
+       </div>
+       <br><br>
+       <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+       <label>Webcam View - </label>
+       <br><br>
+       <p class="option">Watch</p>
+       <br>
+       <hr><br>
+       <p class="option">Spoon</p>
+       <br>
+       <hr><br>
+       <p class="option">Phone</p>
+       <br>
+       <hr><br>
+       <p class="option">Water Bottle</p>
+       <hr>
+       <br>
+       <p class="webcam_veiw-text">Webcam View:</p><br>
+       <div class="webcam" id="camera"></div><br><br>
+       <div class="webcam1" id="output"></div><br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <button class="btn btn-primary" onclick="take_snapshot()">Capture Image</button><br><br>
+       <button class="btn btn-success" onclick="check()">Identify Image</button><br><br>
+       <p style="font-size: 22px;color: white;">Object : <span id="object_identify"
+           style="font-size: 22px;color: yellow;"></span></p>
+       <p style="font-size: 22px;color: white;">Accuraccy : <span id="object_identify_accuracy"
+           style="font-size: 22px;color: yellow;"></span></p>
+     </center>
+
+   </div>
+   
+   <script src="main.js"></script>
+
+ </body>
+
+ </html>

@@ -1,0 +1,25 @@
+body{
+    background-color: pink;
+}
+.option{
+    color: yellow;
+    font-size: 20px;
+}
+.webcam_veiw-text{
+    color: white;
+    font-size: x-large;
+}
+.webcam{
+    background-color: cyan;
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+}
+.webcam1{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+}
+.topic{
+    background-color: WHITE;
+}
